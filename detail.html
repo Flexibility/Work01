@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>详情</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<script>
+		var basepath = "./";//定义当前目录的位置（如果全部在根目录的话，则不需要定义）
+	</script>
+	<style>
+		body,html{margin:0px;background:ghostwhite;}
+		section.head_image{width:100%;height:200px;overflow:hidden;}
+		section.head_image img{width:100%;height:100%;}
+
+		section#article{
+			margin-top:20px;width:100%;
+		}
+		section#article section.title{
+			font: normal normal normal 18px/30px 微软雅黑,黑体; /*style caps weight size/line-height family*/
+			color: #8F9DFA;width:100%;text-align: center;
+		}
+		section#article section.subtitle{
+			font: normal normal normal 12px/20px 微软雅黑,黑体; /*style caps weight size/line-height family*/
+			color: #b2b2b2;width:100%;text-align: center;
+		}
+		section#article article{
+			font: normal normal normal 14px/20px 微软雅黑,黑体; /*style caps weight size/line-height family*/
+			padding: 0px 15px;color:#666;
+		}
+		section#article article p{
+			text-indent: 2em;
+		}
+	</style>
+</head>
+<body>
+	<section class="head_image" style="">
+		<img src="./png/xiangqing.png" alt="" style="">
+	</section>
+	<section id="article" style="">
+		<section class="title">江苏电力公司开展对标工作的培训活动</section>
+		<section class="subtitle">江苏电力&nbsp;&nbsp;&nbsp;&nbsp;<time pubdate="">2015-11-28</time></section>
+		<article>
+			<p>美国西部的不毛之地正成为玩耍的地方，对越来越多拥有摩托车或越野单车类车辆的，喜欢放纵于爬坡比赛或开辟新的沙漠通道的寻欢作乐者具有不断增长的吸引力。
+			<p>Stone does decay, and so tools of long ago have remained when even the bones of the man who made them have disappeared without trace.
+			<p>石头不会腐烂，所以以前的(石器)工具能保存下来，虽然它们的制造者已经消失的无影无踪。
+			<p>Insects would make it impossible for us to live in the world; they would devour all our crops and kill our flocks and herds, if it were not for the protection we get from insect-eating animals.
+			<p>美国西部的不毛之地正成为玩耍的地方，对越来越多拥有摩托车或越野单车类车辆的，喜欢放纵于爬坡比赛或开辟新的沙漠通道的寻欢作乐者具有不断增长的吸引力。
+			<p>Stone does decay, and so tools of long ago have remained when even the bones of the man who made them have disappeared without trace.
+			<p>石头不会腐烂，所以以前的(石器)工具能保存下来，虽然它们的制造者已经消失的无影无踪。
+			<p>Insects would make it impossible for us to live in the world; they would devour all our crops and kill our flocks and herds, if it were not for the protection we get from insect-eating animals.
+			<p>美国西部的不毛之地正成为玩耍的地方，对越来越多拥有摩托车或越野单车类车辆的，喜欢放纵于爬坡比赛或开辟新的沙漠通道的寻欢作乐者具有不断增长的吸引力。
+			<p>Stone does decay, and so tools of long ago have remained when even the bones of the man who made them have disappeared without trace.
+			<p>石头不会腐烂，所以以前的(石器)工具能保存下来，虽然它们的制造者已经消失的无影无踪。
+			<p>Insects would make it impossible for us to live in the world; they would devour all our crops and kill our flocks and herds, if it were not for the protection we get from insect-eating animals.
+
+		</article>
+	</section>
+
+
+	<script src="./js/modules/sea.js"></script>
+    <script>
+    	seajs.config({
+		    paths: {
+		        "basepath":basepath,//定义当前的路径
+		    },
+		    preload: [
+		    	// 'basepath/bootstrap/css/bootstrap.min.css',
+		    	// 'basepath/css/main.css', 
+		    	'basepath/js/modules/jquery-1.9.1.min', 
+		    	'basepath/js/modules/public',
+		    	"basepath/js/modules/bootstrap.min"],//确保jquery,cordova.js已经加载好
+		    base: "" + basepath + "/js/modules/",//这里面放各种插件，比如弹窗，时间，滑动，下拉刷新等等，全部在此配置
+		    // 别名配置
+		    alias: {
+		        /**---------------bootstrap 插件-------------------*/
+		        // "bootstrap": "bootstrap.min",
+		        /**---------------弹出窗口插件-------------------*/
+		        // "dialog": "dialog/dialog",
+		        /**---------------时间滚动选择插件开始-------------------*/
+		        // "datetimeScroll1": "datetime/mobiscroll_002",
+		        // "datetimeScroll2": "datetime/mobiscroll",
+		        // "datetimeScroll3": "datetime/mobiscroll_003",
+		        // "datetimecss1": "datetime/mobiscroll_002.css",
+		        // "datetimecss2": "datetime/mobiscroll.css",
+		        // "datetimecss3": "datetime/mobiscroll_003.css",
+		        /**---------------滑动插件开始(固定高度)---------------------*/
+		        // "swiper1": "swiper/idangerous.swiper-1.9.1.min",
+		        // "swiper2": "swiper/idangerous.swiper.scrollbar-1.2",
+		        // "swipercss": "swiper/idangerous.swiper.css",
+		        /**---------------滑动插件开始(带菜单滑动)---------------------*/
+		        // "swiperhand": "menuswiper/swiperhand",
+		        // "swiperhandcss": "menuswiper/menuswiper.css",
+		        /***-----------------上拉刷新，下拉加载开始-----------------------------*/
+		        // "refreshcss": "refresh/pullToRefresh.css",
+		        // "refresh1": "refresh/iscroll",
+		        // "refresh2": "refresh/pullToRefresh.mini",
+		        /*************************提示框插件*************************/
+		        // "msgbox":"UED/msgbox",
+		        // "msgboxcss": "UED/msgbox.css",
+		        // "myjquery":"jquery-1.9.1.min"
+		    }
+		});
+
+
+		// seajs.use("./js/Test01");
+    </script> 	
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>详情</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<script src="../../js/modules/jquery-1.9.1.min.js"></script>
+	<script>
+		var basepath = "../../";//定义当前目录的位置（如果全部在根目录的话，则不需要定义）
+	</script>
+	<script>
+		$(function(){
+			$(".tab_menu_item").bind("click",function(){
+				if ($(this).hasClass('tab_menu_item_focus')) {return};
+				$(".tab_menu_item_focus").removeClass('tab_menu_item_focus');
+				$(this).addClass('tab_menu_item_focus');
+			});
+		});
+	</script>
+	<style>
+		body,html{margin:0px;background:ghostwhite;}
+		#tab_menu_area{
+			background:white;padding: 10px 0px;
+			border-bottom: 1px solid #ddd;position: fixed;width: 100%;
+		}
+		.tab_menu{
+			border: 1px solid #7A8AF9;-webkit-user-select: none;
+			display: table;margin:0px 10%;width: 80%;overflow: hidden;
+			border-radius: 50px;font: normal normal normal 14px/30px 微软雅黑,黑体; /*style caps weight size/line-height family*/
+		}
+		.tab_menu .tab_menu_item{
+			display: table-cell;text-align: center;overflow: hidden;cursor: pointer;
+			color: #808080; transition: background-color .2s linear;
+		}
+		.tab_menu .tab_menu_item_focus{
+			color: white;background:#7A8AF9;
+		}
+
+		span.my_badge{
+			border-radius: 50px;background:#f50;color: ghostwhite;-webkit-user-select: none;display: inline-block;
+			font-family: 'Helvetica Neue',Helvetica,sans-serif;
+			font-size: 12px;line-height: 1;padding: 3px 6px;
+		}
+	</style>
+</head>
+<body>
+	<section id="tab_menu_area">
+		<section class="tab_menu">
+			<section class="tab_menu_item tab_menu_item_focus">待处理</section>
+			<section class="tab_menu_item">已处理</section>
+		</section>
+	</section>
+	<section class="head_image" style="">
+
+	</section>
+	<section id="article" style="">
+		<article>
+
+
+		</article>
+	</section>
+
+
+	<script src="../../js/modules/sea.js"></script>
+    <script>
+    	seajs.config({
+		    paths: {
+		        "basepath":basepath,//定义当前的路径
+		    },
+		    preload: [
+		    	// 'basepath/bootstrap/css/bootstrap.min.css',
+		    	// 'basepath/css/main.css', 
+		    	'basepath/js/modules/jquery-1.9.1.min', 
+		    	'basepath/js/modules/public',
+		    	"basepath/js/modules/bootstrap.min"],//确保jquery,cordova.js已经加载好
+		    base: "" + basepath + "/js/modules/",//这里面放各种插件，比如弹窗，时间，滑动，下拉刷新等等，全部在此配置
+		    // 别名配置
+		    alias: {
+		        /**---------------bootstrap 插件-------------------*/
+		        // "bootstrap": "bootstrap.min",
+		        /**---------------弹出窗口插件-------------------*/
+		        // "dialog": "dialog/dialog",
+		        /**---------------时间滚动选择插件开始-------------------*/
+		        // "datetimeScroll1": "datetime/mobiscroll_002",
+		        // "datetimeScroll2": "datetime/mobiscroll",
+		        // "datetimeScroll3": "datetime/mobiscroll_003",
+		        // "datetimecss1": "datetime/mobiscroll_002.css",
+		        // "datetimecss2": "datetime/mobiscroll.css",
+		        // "datetimecss3": "datetime/mobiscroll_003.css",
+		        /**---------------滑动插件开始(固定高度)---------------------*/
+		        // "swiper1": "swiper/idangerous.swiper-1.9.1.min",
+		        // "swiper2": "swiper/idangerous.swiper.scrollbar-1.2",
+		        // "swipercss": "swiper/idangerous.swiper.css",
+		        /**---------------滑动插件开始(带菜单滑动)---------------------*/
+		        // "swiperhand": "menuswiper/swiperhand",
+		        // "swiperhandcss": "menuswiper/menuswiper.css",
+		        /***-----------------上拉刷新，下拉加载开始-----------------------------*/
+		        // "refreshcss": "refresh/pullToRefresh.css",
+		        // "refresh1": "refresh/iscroll",
+		        // "refresh2": "refresh/pullToRefresh.mini",
+		        /*************************提示框插件*************************/
+		        // "msgbox":"UED/msgbox",
+		        // "msgboxcss": "UED/msgbox.css",
+		        // "myjquery":"jquery-1.9.1.min"
+		    }
+		});
+
+
+		// seajs.use("./js/Test01");
+    </script> 	
+</body>
+</html>
